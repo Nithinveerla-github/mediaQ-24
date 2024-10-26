@@ -1,0 +1,136 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.main-container{
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    background-color:white;
+    position:sticky;
+    top: 0px;
+    left: 0px;
+    padding: 10px;
+    font-size: 1.5rem;
+}
+span{
+    font-size: 1.8rem;
+}
+.nav a:hover{
+border: 2px solid;
+}
+.logo:hover{
+    border:2px solid;
+}
+.class{
+    padding: 10px;
+    background-color: rgb(238, 136, 98);
+}
+.logo{
+    font-size:2rem;
+}
+.nav{
+    display: flex;
+    gap:30px;
+    align-items: center;
+}
+.nav>a{
+    text-decoration: none;
+    color: black;
+}
+.nav>a:hover{
+    border: 2px solid black;
+}
+.icon{
+    display:none;
+
+}
+.image{
+    background-image:url('./baby3.jpg');
+    background-size: cover;
+    height: 100vh;
+    clear: both;
+    width: 100%;  
+    
+}
+body{
+    position: relative;
+}
+
+.color{
+    color:orangered;
+}
+
+button{
+    background-color:orangered;
+    padding: 10px;
+    color: aliceblue;
+    border-radius: 20px;
+    border: none;
+    margin: 10px;
+}
+.baby{
+    position:absolute;  
+    bottom: 100px;
+    right: 100px;
+    height: 300px;
+    width: 300px;
+    background-color: aliceblue;
+    text-align: center;
+    border-radius: 10px;
+    align-content: center;
+   
+    
+}
+.phone{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+.phone~a{
+    text-decoration: none;
+    color: black;
+    
+}
+
+#check{
+    display: none;
+}
+#check:checked+nav{
+    display:flex;
+    position: absolute;
+    background-color: aliceblue;
+    flex-direction: column;
+    top:56px;
+    justify-content: center;
+    align-items: center;
+    left: 0px;
+    width: 100%;
+    transition: all 10sec ease;
+}
+button>a{
+    color: aliceblue;
+    text-decoration: none;
+    margin: 5px; 
+}
+@media screen and (max-width : 600px){
+    .icon{
+        display:inline-block;
+    }
+    .nav{
+        display:none;
+    }
+   .baby{
+    position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+}
+#check:checked+nav{
+    font-size: medium;
+    gap: 10px;
+
+}
+}
